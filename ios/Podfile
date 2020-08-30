@@ -7,9 +7,12 @@ target 'CityTemp' do
   config = use_native_modules!
 
   use_react_native!(:path => config["reactNativePath"])
+  permissions_path = '../node_modules/react-native-permissions/ios'
 
    pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
    pod 'RNPermissions', :path => '../node_modules/react-native-permissions'
+   pod 'react-native-camera', :path => '../node_modules/react-native-camera'
+   pod 'Permission-Camera', :path => "#{permissions_path}/Camera.podspec"
 
   target 'CityTempTests' do
     inherit! :complete

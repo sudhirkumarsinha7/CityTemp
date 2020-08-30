@@ -148,7 +148,7 @@ class Dashboard extends Component {
         <View style={{flex: 1, justifyContent: 'center'}}>
           {this.renderEachRow(
             'City : ',
-            cityTemp && cityTemp.name ? cityTemp.name : 'City Not Exist',
+            cityTemp && cityTemp.name ? cityTemp.name : 'City Not',
           )}
           {this.renderEachRow(
             'CurrentTemp : ',
@@ -179,7 +179,7 @@ class Dashboard extends Component {
               onPress={() => {
                 this.onClickCameraToScanCode();
               }}>
-              <Icon name="ios-add" />
+              <Icon name="add" />
             </Button>
           </Right>
         </Header>
